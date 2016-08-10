@@ -1,0 +1,26 @@
+<project>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac includeantruntime="false" srcdir="src" destdir="build/classes"/>
+    </target>
+	
+	<target name="jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/JenkinsDemo.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="JenkinsDemo"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/JenkinsDemo.jar" fork="true"/>
+    </target>
+
+</project>	
+	
