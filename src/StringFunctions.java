@@ -7,6 +7,13 @@ public class StringFunctions {
 		System.out.println("Eight Character"+str.charAt(8));
 		System.out.println(str.indexOf('t'));
 		System.out.println(str.indexOf('t',9));		
-		
+		System.out.println(str);
+	    System.out.println("_____________________");
+		String temp[]=str.split("string");
+		Integer length=str.length();
+		for(int i=0;i<=length;i++)
+		{
+			System.out.println(temp[i]);
+		}
 	}
 }
