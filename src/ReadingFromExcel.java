@@ -17,8 +17,5 @@ public class ReadingFromExcel {
 		{
 			System.out.println(row.getCell(0).getStringCellValue());
 		}
-		
-		
-		
 	}
 }
